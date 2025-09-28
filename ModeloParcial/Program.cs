@@ -10,7 +10,7 @@ class Program
         arrayPersonas[1] = new Administrativo("Pedro", "Gómez", "Contabilidad", "Analista");
         arrayPersonas[2] = new Administrativo("María", "López", "Marketing", "Coordinadora");
 
-        arrayPersonas[3] = new Gerente("Javier", "Martínez", 10, 3);
+        arrayPersonas[3] = new Gerente("Javier", "Martínezzzz", 10, 3);
         arrayPersonas[4] = new Gerente("Sofía", "Pérez", 8, 2);
 
         arrayPersonas[5] = new Tecnico("Carlos", "Ruiz", "Backend", "C#");

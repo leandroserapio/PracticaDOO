@@ -12,7 +12,7 @@ class Program
 
         Persona[] arrayPersonas = new Persona[5];
       
-        arrayPersonas[0] = new Usuario("Leandro","Serapio","leandro","1234");
+        arrayPersonas[0] = new Usuario("Leandro","Seerapio","leandro","1234");
         arrayPersonas[1] = new Cliente("Ayelen", "Gutierrez", "asdasd@gmail.com");
 
         arrayPersonas[1].mostrarInfo();

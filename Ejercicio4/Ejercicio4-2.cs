@@ -4,10 +4,6 @@ namespace Ejercicio4
 {
     class Ejercicio4_2
     {
-         
-    
-    
-    
     
     }
 }
