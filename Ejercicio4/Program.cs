@@ -28,7 +28,7 @@ class Program
         arrLat[1] = new Latitud(2.3522);
         arrLong[1] = new Longitud(2.3522);
 
-        arrLat[2] = new Latitud(23.6345);
+        arrLat[2] = new Latitud(23.6345); 
         arrLong[2] = new Longitud(133.8807);
 
         arrLat[3] = new Latitud(51.5074);

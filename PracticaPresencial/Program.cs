@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-class Program 
-{ 
+class Program
+{
 
     static void Main(string[] args)
     {
 
         Persona[] arrayPersonas = new Persona[5];
-      
-        arrayPersonas[0] = new Usuario("Leandro","Seerapio","leandro","1234");
+
+        arrayPersonas[0] = new Usuario("Leandro", "Seerapio", "leandro", "1234");
         arrayPersonas[1] = new Cliente("Ayelen", "Gutierrez", "asdasd@gmail.com");
 
         arrayPersonas[1].mostrarInfo();
 
         Console.WriteLine("Iniciar Sesión");
 
-        Cliente cliente1 = new Cliente("","","");
+        Cliente cliente1 = new Cliente("", "", "");
 
 
     }
@@ -80,7 +80,7 @@ class Program
         }
 
         public void CambiarPassword()
-        { 
+        {
         }
 
     }
@@ -105,4 +105,3 @@ class Program
 
     }
 }
-
