@@ -13,7 +13,6 @@ namespace Ejercicio4
             arrTec[0] = new Tecnico("Pep Guardiola", 52, 15, "Táctica ofensiva");
             arrTec[1] = new Tecnico("Diego Simeone", 53, 12, "Táctica defensiva");
 
-            // Mostrar información de todos los integrantes
             Console.WriteLine("░░░ INFORMACIÓN DE JUGADORES ░░░");
             Console.WriteLine("\n--- Jugador 1 ---");
             jugador1.MostrarInformacion();
@@ -25,7 +24,7 @@ namespace Ejercicio4
             Console.WriteLine("\n░░░ INFORMACIÓN DE TÉCNICOS ░░░");
             for (int i = 0; i < arrTec.Length; i++)
             {
-                Console.WriteLine($"\n--- Técnico {i+1} ---");
+                Console.WriteLine($"\n--- Técnico {i + 1} ---");
                 arrTec[i].MostrarInformacion();
             }
 
