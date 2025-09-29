@@ -12,6 +12,12 @@ class Program
         arrayInstancias[0].Levantar();
 
         arrayInstancias[0].mostraInformacion();
+
+        arrayInstancias[0].Bajar();
+
+        arrayInstancias[0].mostraInformacion();
+
+
     }
 
     public class InstanciaVirtual 
@@ -38,7 +44,7 @@ class Program
         public virtual void Bajar()
         {
             Estado = false;
-            Console.WriteLine("Instancia Bajada\n");
+            Console.WriteLine("Instancia Bajada\n") 
         }
 
         public virtual void mostraInformacion()

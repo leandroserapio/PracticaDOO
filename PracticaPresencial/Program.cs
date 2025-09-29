@@ -19,9 +19,6 @@ class Program
 
         Console.WriteLine("Iniciar Sesión");
 
-        Cliente cliente1 = new Cliente("", "", "");
-
-
     }
 
     public class Persona
@@ -66,9 +63,10 @@ class Program
             Console.Write("Ingresar contraseña: ");
             string contraseniaIngresada = Console.ReadLine();
 
-            if (usuarioIngresado == this.Username && contraseniaIngresada == this.Password)
+            if (usuarioIngresado == Username && contraseniaIngresada == Password)
             {
                 return true;
+                
             }
 
             return false;
@@ -87,14 +85,16 @@ class Program
 
     public class Cliente : Persona
     {
-
         public string Correo;
+
+        public Cliente() 
+        {
+            this.Correo = "Sin correo";
+        }
 
         public Cliente(string name, string apellido, string correo) : base(name, apellido)
         {
-
             this.Correo = correo;
-
         }
 
         public override void mostrarInfo()
@@ -102,6 +102,5 @@ class Program
             base.mostrarInfo();
             Console.WriteLine($"Correo: {Correo}");
         }
-
     }
 }

@@ -9,8 +9,9 @@ namespace Ejercicio4
             Jugador jugador1 = new Jugador("Lionel Messi", 36, 18, "Delantero");
             Jugador jugador2 = new Jugador("Sergio Ramos", 37, 20, "Defensor");
 
-            Tecnico tecnico1 = new Tecnico("Pep Guardiola", 52, 15, "Táctica ofensiva");
-            Tecnico tecnico2 = new Tecnico("Diego Simeone", 53, 12, "Táctica defensiva");
+            Tecnico[] arrTec = new Tecnico[2];
+            arrTec[0] = new Tecnico("Pep Guardiola", 52, 15, "Táctica ofensiva");
+            arrTec[1] = new Tecnico("Diego Simeone", 53, 12, "Táctica defensiva");
 
             // Mostrar información de todos los integrantes
             Console.WriteLine("░░░ INFORMACIÓN DE JUGADORES ░░░");
@@ -20,12 +21,14 @@ namespace Ejercicio4
             Console.WriteLine("\n--- Jugador 2 ---");
             jugador2.MostrarInformacion();
 
-            Console.WriteLine("\n░░░ INFORMACIÓN DE TÉCNICOS ░░░");
-            Console.WriteLine("\n--- Técnico 1 ---");
-            tecnico1.MostrarInformacion();
 
-            Console.WriteLine("\n--- Técnico 2 ---");
-            tecnico2.MostrarInformacion();
+            Console.WriteLine("\n░░░ INFORMACIÓN DE TÉCNICOS ░░░");
+            for (int i = 0; i < arrTec.Length; i++)
+            {
+                Console.WriteLine($"\n--- Técnico {i+1} ---");
+                arrTec[i].MostrarInformacion();
+            }
+
         }
 
         public class Integrante
